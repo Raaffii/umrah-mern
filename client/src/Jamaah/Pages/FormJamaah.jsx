@@ -1,5 +1,5 @@
 import Input from "../../Shared/Form/Input";
-import { VALIDATOR_MINLENGTH, VALIDATOR_REQUIRE } from "../../shared/Util/validator";
+import { VALIDATOR_REQUIRE } from "../../shared/Util/validator";
 import CascadingOption from "../../Shared/Form/CascadingOption";
 import { useState } from "react";
 
