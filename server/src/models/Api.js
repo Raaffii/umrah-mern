@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 mongoose.connect("mongodb+srv://rraaafffii:eeobUIh30OXMGWGB@mern-vercel.dez87.mongodb.net/umroh?retryWrites=true&w=majority&appName=mern-vercel").then(() => console.log("Connected!"));
 
-const dataJamaah = mongoose.model("jamaahs", {
+const dataJamaah = mongoose.model("jamaah", {
   nama: {
     type: String,
     required: true,
