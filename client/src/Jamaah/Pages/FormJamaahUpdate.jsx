@@ -1,5 +1,5 @@
 import Input from "../../Shared/Form/Input";
-import { VALIDATOR_REQUIRE } from "../../Shared/Util/validator";
+import { VALIDATOR_MINLENGTH, VALIDATOR_REQUIRE } from "../../shared/Util/validator";
 import CascadingOption from "../../Shared/Form/CascadingOption";
 import { useState, useEffect } from "react";
 
@@ -49,7 +49,7 @@ export default function FormJamaahUpdate({ data, setList, setModalUpdate, setMes
 
       formData.append("paspor", paspor);
 
-      const response = await fetch("https://umrah-mern-api.vercel.app/api/uploads", {
+      const response = await fetch("http://localhost:3000/api/uploads", {
         method: "PUT",
         body: formData,
       });
@@ -58,7 +58,7 @@ export default function FormJamaahUpdate({ data, setList, setModalUpdate, setMes
         const data = await response.json();
 
         const fetchProducts = async () => {
-          const response = await fetch("https://umrah-mern-api.vercel.app/api/getdata");
+          const response = await fetch("http://localhost:3000/api/getdata");
 
           const responseData = await response.json();
 

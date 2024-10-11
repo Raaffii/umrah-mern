@@ -125,7 +125,7 @@ export default function Jammah() {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch("https://umrah-mern-api.vercel.app/api/getdata");
+      const response = await fetch("http://localhost:3000/api/getdata");
 
       const responseData = await response.json();
 
