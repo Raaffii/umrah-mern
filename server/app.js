@@ -8,7 +8,11 @@ const methodOverride = require("method-override");
 const app = express();
 const port = 3000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://umrah-mern-frontend.vercel.app", // Izinkan origin ini
+  })
+);
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
