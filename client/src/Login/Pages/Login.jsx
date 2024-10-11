@@ -58,9 +58,6 @@ export default function Login() {
               </form>
             </div>
           </div>
-          <div className='col-lg-6 login-half-bg d-flex flex-row'>
-            <p className='text-white font-weight-medium text-center flex-grow align-self-end'>Copyright &copy; 2020 All rights reserved.</p>
-          </div>
         </div>
       </div>
     </div>
