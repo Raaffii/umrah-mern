@@ -8,12 +8,7 @@ const methodOverride = require("method-override");
 const app = express();
 const port = 3000;
 
-app.use(
-  cors({
-    origin: "http://localhost:5173",
-    // Izinkan origin ini
-  })
-);
+app.use(cors());
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
