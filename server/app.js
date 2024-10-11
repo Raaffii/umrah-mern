@@ -10,7 +10,7 @@ const port = 3000;
 
 app.use(
   cors({
-    origin: "https://umrah-mern-frontend.vercel.app/",
+    origin: "https://umrah-mern-frontend.vercel.app",
     // Izinkan origin ini
   })
 );
