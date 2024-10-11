@@ -51,7 +51,7 @@ export default function JamaahTable({ currentItems, indexOfFirstItem, setList, l
   const deleteData = async (nik) => {
     console.log("hoyawal");
     try {
-      await fetch(`http://localhost:3000/api/deleteData/${nik}`, {
+      await fetch(`https://umrah-mern-api.vercel.app/api/deleteData/${nik}`, {
         method: "DELETE",
       });
 

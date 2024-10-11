@@ -15,6 +15,9 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 //setup method override
 app.use(methodOverride("_method"));
 
+app.get("/", (req, res) => {
+  res.json("hello");
+});
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err);
