@@ -4,7 +4,7 @@ const { getData, uploadData, uploadFile, deleteData, updateData } = require("../
 const { upload } = require("../../utils/multer");
 
 // Menggunakan middleware untuk upload file
-routerApi.post("/uploads", upload.fields([{ name: "lampiranKTP" }, { name: "lampiranKK" }, { name: "fotoDiri" }, { name: "paspor" }]), uploadData);
+routerApi.post("/uploadnew", upload.fields([{ name: "lampiranKTP" }, { name: "lampiranKK" }, { name: "fotoDiri" }, { name: "paspor" }]), uploadData);
 routerApi.get("/getdata", getData);
 routerApi.delete("/deleteData/:nik", deleteData);
 routerApi.put("/uploads", upload.fields([{ name: "lampiranKTP" }, { name: "lampiranKK" }, { name: "fotoDiri" }, { name: "paspor" }]), updateData);

@@ -46,7 +46,7 @@ export default function FormJamaah({ toggleModal, setMessage, setList, list }) {
       formData.append("fotoDiri", fotoDiri); // Pastikan ini adalah File
       formData.append("paspor", paspor); // Pastikan ini adalah File
 
-      const response = await fetch("http://localhost:3000/api/uploads", {
+      const response = await fetch("http://localhost:3000/api/uploadnew", {
         method: "POST",
         body: formData,
       });
