@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://zzypyy:rafisukses@cluster0.lidkb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(() => console.log("Connected!"));
+mongoose.connect("mongodb+srv://zzypyy:rafisukses@cluster0.lidkb.mongodb.net/umroh?retryWrites=true&w=majority&appName=Cluster0").then(() => console.log("Connected!"));
 
 const dataJamaah = mongoose.model("dataJamaah", {
   nama: {
